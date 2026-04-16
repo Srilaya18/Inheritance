@@ -9,5 +9,6 @@ public class AppTest {
         Vehicle myCar = new Car();
         // Verifies that the Car object correctly inherited and overrode the method
         assertEquals("Petrol", myCar.fuelType());
+        //New line added
     }
 }
