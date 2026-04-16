@@ -1,3 +1,3 @@
-FROM openjdk:8-jre-alpine
-COPY target/java-app.jar app.jar
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+FROM openjdk:17-jdk-slim
+COPY target/java-inheritance-app-1.0-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]

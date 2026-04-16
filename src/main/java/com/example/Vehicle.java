@@ -1,7 +1,6 @@
 package com.example;
 
 public class Vehicle {
-    public String fuelType() {
-        return "Generic Fuel";
-    }
+    protected String brand = "Generic Vehicle";
+    public String getBrand() { return brand; }
 }

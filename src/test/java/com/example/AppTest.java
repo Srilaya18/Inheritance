@@ -1,14 +1,13 @@
 package com.example;
 
-import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class AppTest {
     @Test
     public void testInheritance() {
-        Vehicle myCar = new Car();
-        // Verifies that the Car object correctly inherited and overrode the method
-        assertEquals("Petrol", myCar.fuelType());
-        //New line added
+        Car myCar = new Car();
+        assertEquals("Ford", myCar.getBrand()); // Tests inherited field
+        assertEquals("Mustang", myCar.getModel());
     }
 }
